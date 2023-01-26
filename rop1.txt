@@ -1,0 +1,54 @@
+numero 1
+ CREATE DATABASE eric_zanez_2023_roteiro_pratico1;
+
+numero 2
+ USE eric_zanez_2023_roteiro_pratico1;
+ 
+ CREATE TABLE clientes(
+	id INTEGER,
+    nomes VARCHAR(50),
+    emails VARCHAR(50),
+    idades INTEGER
+);
+
+numero 3
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('1','nome1','email1','32');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('2','nome2','email2','54');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('3','nome3','email3','65');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('4','nome4','email4','23');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('5','nome5','email5','54');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('6','nome6','email6','15');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('7','nome7','email7','54');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('8','nome8','email8','21');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('9','nome9','email9','32');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('10','nome10','email10','23');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('11','nome11','email11','51');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('12','nome12','email12','14');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('13','nome13','email13','17');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('14','nome14','email14','61');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('15','nome15','email15','34');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('16','nome16','email16','51');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('17','nome17','email17','61');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('18','nome18','email18','51');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('19','nome19','email19','23');
+INSERT INTO `clientes`(`id`, `nomes`, `emails`, `idades`) VALUES ('20','nome10','email20','51');
+
+numero 4
+1.SELECT * from clientes;
+
+2.SELECT nomes from clientes;
+
+3.SELECT idades from clientes;
+
+4.SELECT * from clientes where id = 1
+
+5.SELECT * from clientes LIMIT 4;
+
+numero 5
+UPDATE clientes SET nomes = "Adevair Vitorio" WHERE id = 1;
+
+numero 6
+UPDATE clientes SET nomes = "Odeio Banco De Dados Silva" WHERE id = 3;
+
+numero 7
+DELETE FROM clientes WHERE id = 3
